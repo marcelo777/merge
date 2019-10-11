@@ -6,6 +6,7 @@ public class Persona {
 	private String nombre;
 	private String apellido;
 	private String genero;
+	private double estatura;
 	public Persona(int id, String nombre, String apellido, String genero) {
 		super();
 		this.id = id;
@@ -38,6 +39,13 @@ public class Persona {
 	}
 	public void setGenero(String genero) {
 		this.genero = genero;
+	}
+	
+	public double getEstatura() {
+		return estatura;
+	}
+	public void setEstatura(double estatura) {
+		this.estatura = estatura;
 	}
 	@Override
 	public String toString() {
