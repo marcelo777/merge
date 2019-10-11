@@ -5,11 +5,13 @@ public class Persona {
 	private int id;
 	private String nombre;
 	private String apellido;
-	public Persona(int id, String nombre, String apellido) {
+	private String genero;
+	public Persona(int id, String nombre, String apellido, String genero) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.genero = genero;
 	}
 	public int getId() {
 		return id;
@@ -29,10 +31,19 @@ public class Persona {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+	
+	
+	public String getGenero() {
+		return genero;
+	}
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
 	@Override
 	public String toString() {
-		return "Persona [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+		return "Persona [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", genero=" + genero + "]";
 	}
+	
 	
 	
 
