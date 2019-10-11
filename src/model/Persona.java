@@ -6,6 +6,8 @@ public class Persona {
 	private String nombre;
 	private String apellido;
 	private String genero;
+	private float estatura;
+	
 	public Persona(int id, String nombre, String apellido, String genero) {
 		super();
 		this.id = id;
@@ -13,6 +15,18 @@ public class Persona {
 		this.apellido = apellido;
 		this.genero = genero;
 	}
+	
+	
+	public float getEstatura() {
+		return estatura;
+	}
+
+
+	public void setEstatura(float estatura) {
+		this.estatura = estatura;
+	}
+
+
 	public int getId() {
 		return id;
 	}
